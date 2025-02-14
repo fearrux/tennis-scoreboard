@@ -1,5 +1,6 @@
 package com.fearrux.util;
 
+import com.fearrux.entity.Match;
 import com.fearrux.entity.Player;
 import lombok.experimental.UtilityClass;
 import org.hibernate.SessionFactory;
@@ -10,7 +11,7 @@ public class HibernateUtil {
     public static SessionFactory get() {
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(Player.class);
-        configuration.addAnnotatedClass(Math.class);
+        configuration.addAnnotatedClass(Match.class);
         configuration.configure();
         return configuration.buildSessionFactory();
     }
