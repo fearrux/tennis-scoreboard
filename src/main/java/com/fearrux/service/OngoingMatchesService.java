@@ -21,11 +21,21 @@ public class OngoingMatchesService {
     }
 
     public MatchRequestDTO get(UUID uuid) throws InvalidUuidException {
-        MatchRequestDTO match = matches.get(uuid);
-        if (match == null) {
+        if (!isFindMatch(uuid)) {
             throw new MatchDoesNotExistException("The match not found.");
         }
-        return match;
+        return matches.get(uuid);
+    }
+
+    public void remove(UUID uuid) {
+        if (!isFindMatch(uuid)) {
+            throw new MatchDoesNotExistException("The match not found.");
+        }
+        matches.remove(uuid);
+    }
+
+    private boolean isFindMatch(UUID uuid) {
+        return matches.get(uuid) != null;
     }
 
     private OngoingMatchesService() {
