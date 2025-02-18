@@ -6,4 +6,9 @@ import lombok.Value;
 public class Error {
     String code;
     String message;
+
+    @Override
+    public String toString() {
+        return "Error: " + message;
+    }
 }
