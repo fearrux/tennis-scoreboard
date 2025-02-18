@@ -1,0 +1,211 @@
+body {
+    color: black;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.roadmap-link {
+    font-size: 20px;
+    font-family: "JetBrains Mono", monospace;
+    margin: 15px;
+}
+
+
+
+.btn-container {
+    display: flex;
+}
+
+.tennis-image {
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.button {
+    font-size: 19px;
+    font-family: "JetBrains Mono", monospace;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    text-align: right;
+    font-size: 19px;
+    font-family: "JetBrains Mono", monospace;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: gray;
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.new-match-image {
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.unique-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.unique-table th, .unique-table td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.unique-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.unique-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.unique-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.unique-button {
+    background-color: #d3d3d3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.unique-button:hover {
+    background-color: #b0b0b0;
+}
+
+.player_forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.player_forms label {
+    margin-bottom: 5px;
+}
+
+.player_forms input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.error-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    color: red !important;
+}
+
+.error-message {
+    color: red !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+}
+
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: lavender;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: lightgray;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roadmap-link {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 15px;
+        margin: 10px 0;
+    }
+}
