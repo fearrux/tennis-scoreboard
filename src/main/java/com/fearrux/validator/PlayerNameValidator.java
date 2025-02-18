@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 public class PlayerNameValidator implements Validator<String> {
     private static final int MINIMUM_LENGTH = 3;
     private static final int MAXIMUM_LENGTH = 20;
-    private static final Pattern NAME_RU_FORMAT = Pattern.compile("^[а-яА-Я]+$");
-    private static final Pattern NAME_EN_FORMAT = Pattern.compile("^[a-zA-z]+$");
+    private static final Pattern NAME_RU_FORMAT = Pattern.compile("^[а-яА-Я\\s.]+$");
+    private static final Pattern NAME_EN_FORMAT = Pattern.compile("^[a-zA-z\\s.]+$");
 
     @Override
     public ValidationResult validate(String object) {
