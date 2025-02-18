@@ -97,14 +97,6 @@ public class MatchScoreCalculationService {
         updatePoints(match, playerId);
     }
 
-    private void handleSetWin() {
-
-    }
-
-    private void handleGameWin() {
-
-    }
-
     private boolean isGame(int winnerPoints, int loserPoints) {
         return winnerPoints >= MINIMUM_POINTS_NUMBER_FOR_GAME && winnerPoints - loserPoints >= MINIMUM_DIFFERENCE_BETWEEN_PLAYERS;
     }
@@ -123,7 +115,7 @@ public class MatchScoreCalculationService {
         matchState.setSecondPlayerGames(0);
     }
 
-    private boolean isTieBreak(int firstPlayerGames, int secondPlayerGames) {
+    public boolean isTieBreak(int firstPlayerGames, int secondPlayerGames) {
         return firstPlayerGames == GAMES_NUMBER_IN_TIE_BREAK && firstPlayerGames == secondPlayerGames;
     }
 
