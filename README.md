@@ -36,7 +36,7 @@
 1. Clone the repository:
 
    ```bash
-   [https://github.com/fearrux/tennis-scoreboard.git](https://github.com/fearrux/tennis-scoreboard.git)
+   https://github.com/fearrux/tennis-scoreboard.git
    ```  
 2. Open IntelliJ IDEA.
 3. In the main menu, click on Open and select the folder you cloned in the first step.
