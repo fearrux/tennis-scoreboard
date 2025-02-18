@@ -40,11 +40,11 @@ public class NewMatchServlet extends HttpServlet {
                 .build();
 
         ongoingMatchesService.add(match.getUuid(), match);
-        resp.sendRedirect("/match-score?uuid=" + match.getUuid());
+        resp.sendRedirect(req.getContextPath() + "/match-score?uuid=" + match.getUuid());
     }
 
     private void validateMatchPlayers(String firstPlayerName, String secondPlayerName) throws InvalidMatchException {
-        if (firstPlayerName.equalsIgnoreCase(secondPlayerName)) {
+        if (firstPlayerName.trim().equalsIgnoreCase(secondPlayerName.trim())) {
             throw new InvalidMatchException("Players must have different names.");
         }
     }
